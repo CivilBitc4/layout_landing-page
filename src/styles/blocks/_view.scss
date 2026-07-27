@@ -1,0 +1,65 @@
+.view {
+  .page__section-title {
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    max-width: 420px;
+    margin: 0 auto 48px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include on-tablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  .button {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.place {
+  margin-bottom: 48px;
+
+  @include on-tablet {
+    margin-bottom: 64px;
+  }
+
+  &__media {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    transition: transform $transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-red;
+    transition: color $transition;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__text {
+    margin: 4px 0 0;
+    text-transform: uppercase;
+  }
+}
