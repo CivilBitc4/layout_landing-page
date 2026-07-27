@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>MET</title>
+    <title>The MET</title>
     <link
       rel="icon"
       href="./src/images/logo.png"
@@ -196,7 +196,7 @@
 
     <main class="main">
       <section
-        class="page__section about"
+        class="page__section about reveal"
         id="about-us"
       >
         <div class="container grid">
@@ -250,7 +250,7 @@
       </section>
 
       <section
-        class="page__section view"
+        class="page__section view reveal"
         id="now-on-view"
       >
         <div class="container">
@@ -261,17 +261,31 @@
             videos, articles, and more.
           </p>
 
-          <article class="place">
-            <a
-              href="#"
-              class="place__media"
-            >
-              <img
-                class="place__photo"
-                src="./src/images/view/1.jpg"
-                alt="A New Look at Old Masters"
-              />
-            </a>
+          <article class="place place--masters reveal">
+            <div class="place__gallery">
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/1.jpg"
+                  alt="A New Look at Old Masters collage"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/1b.jpg"
+                  alt="Portrait from Old Masters exhibition"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <a
               href="#"
               class="place__link"
@@ -281,17 +295,42 @@
             <p class="place__text">December 12, 2020 - Through Spring 2023</p>
           </article>
 
-          <article class="place">
-            <a
-              href="#"
-              class="place__media"
-            >
-              <img
-                class="place__photo"
-                src="./src/images/view/2.jpg"
-                alt="Bodhisattvas of Wisdom, Compassion, and Power"
-              />
-            </a>
+          <article class="place place--bodhi reveal">
+            <div class="place__gallery">
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/2a.jpg"
+                  alt="Bodhisattva artwork 1"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/2b.jpg"
+                  alt="Bodhisattva artwork 2"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/2c.jpg"
+                  alt="Bodhisattva artwork 3"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <a
               href="#"
               class="place__link"
@@ -301,17 +340,31 @@
             <p class="place__text">March 27, 2021 - October 30, 2022</p>
           </article>
 
-          <article class="place">
-            <a
-              href="#"
-              class="place__media"
-            >
-              <img
-                class="place__photo"
-                src="./src/images/view/3.jpg"
-                alt="Inspiring Walt Disney"
-              />
-            </a>
+          <article class="place place--disney reveal">
+            <div class="place__gallery">
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/3.jpg"
+                  alt="Ornate clocks from Walt Disney exhibition"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="#"
+                class="place__media"
+              >
+                <img
+                  class="place__photo"
+                  src="./src/images/view/3b.jpg"
+                  alt="Porcelain figurines from Walt Disney exhibition"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <a
               href="#"
               class="place__link"
@@ -322,7 +375,7 @@
           </article>
 
           <a
-            href="#"
+            href="#now-on-view"
             class="button"
           >
             View all exhibitions
@@ -331,7 +384,7 @@
       </section>
 
       <section
-        class="page__section online"
+        class="page__section online reveal"
         id="explore-online"
       >
         <div class="container">
@@ -340,7 +393,7 @@
           </h2>
 
           <div class="online__grid grid">
-            <article class="online__card">
+            <article class="online__card reveal">
               <a
                 href="#"
                 class="online__media"
@@ -349,6 +402,7 @@
                   class="online__image"
                   src="./src/images/online/1.jpg"
                   alt="Collection Areas"
+                  loading="lazy"
                 />
               </a>
               <a
@@ -363,7 +417,7 @@
               </p>
             </article>
 
-            <article class="online__card">
+            <article class="online__card reveal">
               <a
                 href="#"
                 class="online__media"
@@ -372,6 +426,7 @@
                   class="online__image"
                   src="./src/images/online/2.jpg"
                   alt="Travel"
+                  loading="lazy"
                 />
               </a>
               <a
@@ -386,7 +441,7 @@
               </p>
             </article>
 
-            <article class="online__card">
+            <article class="online__card reveal">
               <a
                 href="#"
                 class="online__media"
@@ -395,6 +450,7 @@
                   class="online__image"
                   src="./src/images/online/3.jpg"
                   alt="Virtual group tours"
+                  loading="lazy"
                 />
               </a>
               <a
@@ -414,7 +470,7 @@
       </section>
 
       <section
-        class="page__section contacts"
+        class="page__section contacts reveal"
         id="contacts"
       >
         <div class="container">
@@ -476,20 +532,20 @@
                   class="form-field contacts__field"
                   name="name"
                   type="text"
-                  placeholder="John Smith"
+                  placeholder="Name: John Smith"
                   required
                 />
                 <input
                   class="form-field contacts__field"
                   name="email"
                   type="email"
-                  placeholder="email@example.com"
+                  placeholder="Email: email@example.com"
                   required
                 />
                 <textarea
                   class="form-field form-field--textarea contacts__field"
                   name="message"
-                  placeholder="Your message"
+                  placeholder="Message: I'd like to ask about tickets..."
                   required
                 ></textarea>
                 <button
