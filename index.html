@@ -10,6 +10,18 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>The MET</title>
+    <script>
+      document.documentElement.classList.add('js');
+      window.setTimeout(function () {
+        if (window.__REVEAL_READY__) {
+          return;
+        }
+
+        document.querySelectorAll('.reveal').forEach(function (element) {
+          element.classList.add('is-visible');
+        });
+      }, 1500);
+    </script>
     <link
       rel="icon"
       href="./src/images/logo.png"
@@ -32,8 +44,8 @@
       href="./src/styles/main.scss"
     />
     <script
+      type="module"
       src="./src/scripts/main.js"
-      defer
     ></script>
   </head>
   <body class="page__body">

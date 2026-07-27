@@ -1,5 +1,8 @@
 'use strict';
 
+window.__REVEAL_READY__ = true;
+document.documentElement.classList.add('js');
+
 const revealElements = document.querySelectorAll('.reveal');
 
 if (revealElements.length > 0) {
